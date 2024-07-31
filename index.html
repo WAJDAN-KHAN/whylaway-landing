@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whylaway</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Varela&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <section class="header-section fixed top-0 md:relative w-full z-[999] py-[12px] bg-[#1d1e2c]">
+        <div class="px-[15px]">
+            <div class="flex lg:hidden mobile justify-between items-center">
+                <button class="layout-drawer-hamburger hamburger-on-header" id="layout-drawer-hamburger"
+                    aria-label="menu"> <span class="hamburger__slice"></span>
+                    <span class="hamburger__slice"></span>
+                    <span class="hamburger__slice"></span>
+                </button>
+                <a href="#" class="max-w-[190px] w-full h-auto" id="mobile-logo">
+                    <img src="./assets/images/Whylaway-Logo-d7736200.svg" class="max-w-full h-auto" alt="">
+                </a>
+                <a href="#" id="mobile-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffff" width="30px" style="color: #fff;"
+                        viewBox="0 0 70 70" id="1009296270" class="svg u_1009296270" data-icon-name="wp-phone">
+                        <g id="1280868223">
+                            <path
+                                d="M25.3,44.8C35.7,55.3,44.2,56,46.6,56c3.9,0,9.4-5,9.4-6.3v-2.5c0-0.6-0.4-1.1-1-1.3l-10-3.2c-0.5-0.2-1,0-1.4,0.3L40,46.8
+                        c-0.4,0.4-1.1,0.5-1.6,0.2c-1.5-0.9-4.8-2.9-8.6-6.8c-3.8-3.8-5.9-7.1-6.8-8.6c-0.3-0.5-0.2-1.2,0.2-1.6l3.7-3.7
+                        c0.4-0.4,0.5-0.9,0.3-1.4l-3.2-10c-0.2-0.6-0.7-1-1.3-1h-2.5C19,14.1,14,19.7,14,23.5C14,25.8,14.8,34.3,25.3,44.8L25.3,44.8z"
+                                id="1141627840"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="px-[10px] hidden lg:block">
+                <nav class="flex justify-center items-stretch py-[10px]">
+                    <ul class="flex justify-end items-center flex-wrap list-none">
+                        <li class="relative">
+                            <a href="#"
+                                class="text-[14px] text-[#fff] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                                Home
+                            </a>
+                        </li>
+                        <li class="relative">
+                            <a href="#"
+                                class="text-[14px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                                Facilites
+                            </a>
+                        </li>
+                        <li class="relative">
+                            <a href="#"
+                                class="text-[14px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                                Services
+                            </a>
+                        </li>
+                        <li class="relative">
+                            <a href="#"
+                                class="text-[14px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                                Reviews
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="md:max-w-[340px] w-full h-auto">
+                        <img src="./assets/images/Whylaway-Logo-d7736200.svg" class="max-w-full h-auto" alt="">
+                    </a>
+                    <ul class="flex justify-end items-center flex-wrap list-none">
+                        <li class="relative">
+                            <a href="#costs"
+                                class="text-[14px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                                Costs
+                            </a>
+                        </li>
+                        <li class="relative">
+                            <a href="#"
+                                class="text-[14px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                                Book
+                            </a>
+                        </li>
+                        <li class="relative">
+                            <a href="#"
+                                class="text-[14px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <div id="mobile-menu"
+        class="hidden fixed inset-0 bg-[#1d1e2c] flex flex-col gap-20 justify-center items-center z-[50] opacity-0 transform -translate-y-full transition-all duration-300">
+        <ul class="flex flex-col justify-center items-center space-y-4">
+            <li class="relative">
+                <a href="#"
+                    class="text-[18px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                    Home
+                </a>
+            </li>
+            <li class="relative">
+                <a href="#"
+                    class="text-[18px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                    Facilites
+                </a>
+            </li>
+            <li class="relative">
+                <a href="#"
+                    class="text-[18px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                    Services
+                </a>
+            </li>
+            <li class="relative">
+                <a href="#"
+                    class="text-[18px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                    Reviews
+                </a>
+            </li>
+            <li class="relative">
+                <a href="##costs"
+                    class="text-[18px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                    Costs
+                </a>
+            </li>
+            <li class="relative">
+                <a href="#"
+                    class="text-[18px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                    Book
+                </a>
+            </li>
+            <li class="relative">
+                <a href="#"
+                    class="text-[18px] text-[#e9e7e79e] py-[1px] px-[15px] font-normal transition-all hover:text-white">
+                    Contact
+                </a>
+            </li>
+        </ul>
+        <span
+            class="bg-white cursor-pointer w-[28px] mx-auto md:mx-0 h-[28px] rounded-[50%] flex items-center justify-center transition-transform duration-300 hover:-translate-y-1">
+            <img src="./assets/images/facebook.png" class="max-w-[18px] h-auto object-contain" alt="">
+        </span>
+    </div>
+
+
+    <!-- content  -->
+
+    <section class="u_1528695426">
+
+    </section>
+
+    <section class="px-[15px] 2xl:container mx-auto bg-white py-[70px]">
+        <div class=" text-center">
+            <h1 class="font-bold text-black text-[32px] md:text-[72px] md:leading-[108px]">
+                Whylaway boarding for cats and dogs
+            </h1>
+            <div class="lg:max-w-[1230px] max-w-full w-full mx-auto py-[2px] mb-[38px]">
+                <h3 class="font-bold text-black text-[18px] md:text-[24px] leading-[36px]">
+                    Need to go out of town? Whylaway Boarding Kennel & Cattery can give your pet quality care - and can
+                    give you peace of mind. It's our aim to ensure your pets have as much fun during their stay with us
+                    as you do on your holiday.
+                </h3>
+
+            </div>
+            <div class=" ">
+                <div class="flex lg:flex-row flex-col justify-center gap-4 lg:gap-0    ">
+                    <div class="md:px-[20px]">
+                        <button
+                            class="bg-[#fc3a8c] text-white rounded-[2px] border border-[3px] border-[#fc3a8c] h-[53px] min-w-[284px] w-full font-bold text-[18px] transition-all hover:bg-transparent hover:text-[#fc3a8c]">
+                            BOOK NOW
+                        </button>
+
+                    </div>
+                    <div class="md:px-[20px]">
+                        <button
+                            class="bg-[#fc3a8c] text-white rounded-[2px] border border-[3px] border-[#fc3a8c] h-[53px] min-w-[284px] w-full font-bold text-[18px] transition-all hover:bg-transparent hover:text-[#fc3a8c]">
+                            SERVICES
+                        </button>
+
+                    </div>
+                    <div class="md:px-[20px]">
+                        <button
+                            class="bg-[#fc3a8c] text-white rounded-[2px] border border-[3px] border-[#fc3a8c] h-[53px] min-w-[284px] w-full font-bold text-[18px] transition-all hover:bg-transparent hover:text-[#fc3a8c]">
+                            FACILITIES
+                        </button>
+
+                    </div>
+                    <div class="md:px-[20px]">
+                        <button
+                            class="bg-[#fc3a8c] text-white rounded-[2px] border border-[3px] border-[#fc3a8c] h-[53px] min-w-[284px] w-full font-bold text-[18px] transition-all hover:bg-transparent hover:text-[#fc3a8c]">
+                            COSTS
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="pt-[40px]">
+                <a href="#about-sec"
+                    class="w-[71px] h-[71px] mx-auto bg-[#1d1e2c] cursor-pointer hover:bg-[#fc3a8c] rounded-[50%] flex justify-center items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ffff" width="35px" viewBox="0 0 70 70"
+                        id="1560870798" class="svg u_1560870798" data-icon-name="ar-arrow_drop_down">
+                        <polygon points="35,45.7 15.1,26.7 17.4,24.3 35,41.2 52.6,24.3 54.9,26.7 "></polygon>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-[74px] bg-[#7dbcff]" id="about-sec">
+        <div class="px-[15px] container mx-auto">
+            <div class="lg:px-[20px]">
+                <div class="lg:px-[40px]">
+                    <div class="grid grid-cols-12 gap-5 md:gap-0 items-center">
+                        <div class="col-span-12 md:col-span-8 md:px-[20px]">
+                            <h2 class="font-bold text-black  text-[24px] md:text-[60px] md:leading-[90px]">
+                                How we started
+                            </h2>
+                            <div class="w-[70px] py-[20px]">
+                                <hr style="border: 2px solid #1d1e2c;">
+                            </div>
+                            <div class="my-[8px]">
+                                <p class="text-[16px]"><span style="display: initial;">At Whylaway Boarding Kennels
+                                        &amp; Cattery we really
+                                        do care about your pets and we all love what we do. Our staff has over 40 years
+                                        experience and knowledge in caring for pets. Qualified Vet Nurse on site.</span>
+                                </p>
+                            </div>
+                            <button
+                                class="bg-[#fc3a8c] text-white rounded-[2px] border border-[3px] border-[#fc3a8c] h-[53px] min-w-[284px]  my-4 font-bold text-[18px] transition-all hover:bg-transparent hover:text-[#fc3a8c]">
+                                OUR SERVICES
+                            </button>
+                        </div>
+                        <div class="col-span-12 md:col-span-4 md:px-[20px]">
+                            <div>
+                                <img src="./assets/images/__TFMF_2nawydjruotb3e45fpcnhx55_5cf6be17-3061-4d53-b202-a71bf3823673_0___Selected.jpg"
+                                    class="max-w-full h-auto w-full" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-[74px]   bg_immg lg:h-[510px] lg:flex lg:items-center">
+        <div class="px-[15px] container mx-auto">
+            <div class="lg:px-[20px] relative  ">
+                <div class="lg:px-[40px]">
+                    <h2 class="font-bold text-white text-[24px] md:text-[60px] md:leading-[90px]">
+                        The Location
+                    </h2>
+                    <div class="w-[70px] py-[20px]">
+                        <hr style="border: 2px solid #fff;">
+                    </div>
+                    <div class="my-[8px] text-white">
+                        <p class="text-[16px]"><span style="display: initial;">Whylaway Boarding Kennels & Cattery is
+                                situated on 20 acres in a quiet country area, Helidon Spa. Offering modern and
+                                professional setup we warmly invite inspections, please take a look at our
+                                gallery.</span>
+                        </p>
+                    </div>
+                    <button
+                        class="bg-transparent text-white rounded-[2px] border border-[3px] border-white h-[53px] min-w-[284px]  my-4 font-bold text-[18px] transition-all hover:bg-white hover:text-[#000]">
+                        FACILITIES
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-[74px]    ">
+        <div class="px-[15px] container mx-auto">
+            <div class="lg:px-[20px] text-center relative  ">
+
+                <h2 class="font-bold  text-[24px] md:text-[60px] md:leading-[90px]">
+                    Thank You Cards
+                </h2>
+                <div class="grid md:grid-cols-2 py-10 grid-cols-1 gap-[15px] lg:grid-cols-3 ">
+                    <div
+                        class="cursor-pointer  bg-[#7dbcff] p-[15px] min-h-[200px] h-full relative flex flex-col justify-center items-center">
+                        <h3 class="font-bold  text-[24px]  pb-[10px]">
+                            Michael & Trisha O'Neill
+                        </h3>
+                        <p class="text-[14px]">
+                            Thank you for taking such good care of our puppy. It's nice to know we can go away knowing
+                            that "Guinness" will be well cared for in our absence.
+                        </p>
+                    </div>
+                    <div
+                        class="cursor-pointer  bg-[#7dbcff] p-[15px] min-h-[200px] h-full relative flex flex-col justify-center items-center">
+                        <h3 class="font-bold  text-[24px]  pb-[10px]">
+                            Brad & Donna Gear
+                        </h3>
+                        <p class="text-[14px]">
+                            Thanks for making my stay at Whylaway fun and enjoyable. Bucks
+                        </p>
+                    </div>
+                    <div
+                        class="cursor-pointer  bg-[#7dbcff] p-[15px] min-h-[200px] h-full relative flex flex-col justify-center items-center">
+                        <h3 class="font-bold  text-[24px]  pb-[10px]">
+                            Helen & Ernie Kupfer
+                        </h3>
+                        <p class="text-[14px]">
+                            Many thanks for taking such good care of our Maddie.
+                        </p>
+                    </div>
+                </div>
+                <button
+                    class="bg-[#fc3a8c] text-white rounded-[2px] border border-[3px] border-[#fc3a8c] h-[53px] min-w-[284px] mx-auto  my-4 font-bold text-[18px] transition-all hover:bg-transparent hover:text-[#fc3a8c]">
+                    MORE REVIEWS
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+
+    <section class="bg-[#1d1e2c] py-[74px]  px-[15px]">
+        <div class="lg:max-w-[960px] max-w-full w-full mx-auto">
+            <div class="grid md:grid-cols-2 grid-cols-1">
+                <div class="md:px-[20px]">
+                    <div class="md:max-w-[289px] h-auto">
+                        <img src="./assets/images/Whylaway-Logo-d7736200.svg" class="max-w-full h-auto" alt="">
+                    </div>
+                    <div class="pt-[15px]">
+
+                        <span
+                            class="bg-white cursor-pointer w-[28px] mx-auto md:mx-0 h-[28px] rounded-[50%] flex items-center justify-center transition-transform duration-300 hover:-translate-y-1">
+                            <img src="./assets/images/facebook.png" class="max-w-[18px] h-auto object-contain" alt="">
+                        </span>
+
+                    </div>
+                    <div class="h-[20px]"></div>
+                    <div class="md:pl-[20px] pt-3">
+                        <div class="pl-[10px] hidden md:block">
+                            <p class="text-white text-[13px] mb-3">
+                                © 2024
+                                All Rights Reserved
+                            </p>
+                            <a href="" class="text-[#fc3a8c] text-[16px]  hover:underline">
+
+                                Whylaway Boarding Kennels
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:px-[20px]">
+                    <h3 class="text-white px-[15px] text-center  md:text-start text-[24px] font-bold pb-[10px]">
+                        Explore
+                    </h3>
+                    <nav class="pb-[10px] md:max-w-[350px] max-w-full  w-full">
+                        <ul class="flex-wrap justify-center md:justify-start flex list-none">
+                            <li class="relative px-[15px] py-[10px] group">
+                                <a href="#"
+                                    class="flex relative justify-start items-center  text-white text-[16px]  leading-[24px]">
+                                    Home
+                                    <span
+                                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                                </a>
+                            </li>
+                            <li class="relative px-[15px] py-[10px] group">
+                                <a href="#"
+                                    class="flex relative justify-start items-center  text-white text-[16px]  leading-[24px]">
+                                    Facilites
+                                    <span
+                                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                                </a>
+                            </li>
+                            <li class="relative px-[15px] py-[10px] group">
+                                <a href="#"
+                                    class="flex relative justify-start items-center  text-white text-[16px]  leading-[24px]">
+                                    Services
+                                    <span
+                                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                                </a>
+                            </li>
+                            <li class="relative px-[15px] py-[10px] group">
+                                <a href="#"
+                                    class="flex relative justify-start items-center  text-white text-[16px]  leading-[24px]">
+                                    Reviews
+                                    <span
+                                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                                </a>
+                            </li>
+                            <li class="relative px-[15px] py-[10px] group">
+                                <a href="##costs"
+                                    class="flex relative justify-start items-center  text-white text-[16px]  leading-[24px]">
+                                    Costs
+                                    <span
+                                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                                </a>
+                            </li>
+                            <li class="relative px-[15px] py-[10px] group">
+                                <a href="#"
+                                    class="flex relative justify-start items-center  text-white text-[16px]  leading-[24px]">
+                                    Book
+                                    <span
+                                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                                </a>
+                            </li>
+                            <li class="relative px-[15px] py-[10px] group">
+                                <a href="#"
+                                    class="flex relative justify-start items-center  text-white text-[16px]  leading-[24px]">
+                                    Contact
+                                    <span
+                                        class="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+
+                    <div class="md:pl-[20px] pt-3 hidden md:block">
+                        <div class="pl-[10px]">
+                            <a href="" class="text-[#fc3a8c] block text-[16px]  hover:underline">
+
+                                Privacy Policy
+
+                            </a>
+                            <a href="" class="text-[#fc3a8c] text-[16px]  hover:underline">
+
+                                Developed by Indigo Web
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        document.getElementById('layout-drawer-hamburger').addEventListener('click', function () {
+            this.classList.toggle('active');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLogo = document.getElementById('mobile-logo');
+            const mobileSvg = document.getElementById('mobile-svg');
+
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                mobileLogo.classList.add('hidden');
+                mobileSvg.classList.add('hidden');
+                setTimeout(() => {
+                    mobileMenu.classList.add('flex');
+                    mobileMenu.classList.remove('opacity-0', '-translate-y-full');
+                }, 10); // delay the transition start
+            } else {
+                mobileMenu.classList.add('opacity-0', '-translate-y-full');
+                mobileMenu.classList.remove('flex');
+                mobileLogo.classList.remove('hidden');
+                mobileSvg.classList.remove('hidden');
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300); // match the transition duration
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>

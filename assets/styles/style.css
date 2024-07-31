@@ -1,0 +1,293 @@
+body {
+    font-family: 'Varela', 'Varela Fallback', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.u_1528695426 {
+
+    background-attachment: fixed;
+    background-size: cover;
+    float: none;
+    top: 0;
+    left: 0;
+    position: relative;
+    height: auto;
+    padding: 43.5px 0 110.5px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url('../images/anna-dudkova-urs_y9NwFcc-unsplash-resized-1920w.webp') ;
+    background-color: #4d4d4d ;
+    height: 354px;
+
+}
+
+.bg_immg{
+    background-color: #e9e7e7;
+    background-repeat: no-repeat;
+    background-image: url('../images/location.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: 50% 50% !important;
+    
+
+} 
+.bg_immg::before{
+    background-color: #000 !important;
+    opacity: .6 !important;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    content: ' ' !important;
+    border-radius: inherit;
+}
+.hamburger-on-header {
+    background-color: transparent!important;
+    color: #fff!important;
+}
+
+.layout-drawer-hamburger .hamburger__slice {
+    display: block;
+    height: 0;
+    width: 100%;
+    border: 1px solid currentColor;
+    transition: transform .3s ease-out, opacity .4s ease-out;
+    transform-origin: center;
+}
+
+.layout-drawer-hamburger {
+    background: unset;
+    -webkit-appearance: none;
+    appearance: none;
+    left: 10px;
+    margin-left: env(safe-area-inset-left);
+    padding: 13px 9px;
+    z-index: 14;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #787878;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    justify-content: space-between;
+    align-items: stretch;
+    top: 10px;
+    transition: color .3s ease-in, background-color .3s ease-in;
+    border-radius: 0;
+}
+
+.hamburger-on-header.active .hamburger__slice:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger-on-header.active .hamburger__slice:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-on-header.active .hamburger__slice:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+
+.requirements-content p{
+    font-size: 16px;
+    color: white;
+}
+
+
+.bg_immg2{
+    background-color: #e9e7e7;
+    background-repeat: no-repeat;
+    background-image: url('../images/location2.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: 50% 50% !important;
+    
+
+} 
+.bg_immg2::before{
+    background-color: #000 !important;
+    opacity: .6 !important;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    content: ' ' !important;
+    border-radius: inherit;
+}
+
+
+.requirements-content ul{
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.requirements-content ul li{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+.requirements-content ul li span{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.services-content p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.services-content ul{
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.services-content ul li{ 
+    font-size: 16px;
+    font-style: italic;
+}
+.facilities-content p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.facilities-content ul{
+    list-style-type: disc;
+    margin-left: 30px;
+}
+.facilities-content ul li{ 
+    font-size: 16px;
+     
+}
+
+.services-content button{
+    background: rgb(252, 58, 140);
+    border: 3px solid rgb(252, 58, 140);
+    color: white;
+    font-weight: 700;
+    border-radius: 2px;
+    min-width: 284px;
+    height: 53px;
+    margin: 20px 0px;
+    transition: .3s;
+}
+.services-content button:hover{
+    background: transparent;
+    border: 3px solid rgb(252, 58, 140);
+color: rgb(252, 58, 140);
+}
+
+
+.cat_bg{
+    background-image: url('../images/rotiv-artic-fLL6q29IccA-unsplash-06ee480a-1920w.webp');
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.dog_bg{
+    background-image: url('../images/anna-dudkova-md2_P9X7t4M-unsplash-1920w.webp');
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.tab-content h1{
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.tab-content p{
+    font-size: 16px;
+}
+
+.tab-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.tab-content ul li{
+    font-size: 16px;
+}
+.tab-content ul li span{
+    font-style: italic;
+}
+
+.tab-label.active {
+    background-color: #f5f5f5;
+}
+.tab-content.hidden {
+    display: none;
+}
+
+
+.gallery img{
+    transition: .3s;
+    cursor: pointer;
+}
+.gallery img:hover{
+    opacity: .5;
+}
+
+
+
+
+.bg_immg3{
+    background-color: #e9e7e7;
+    background-repeat: no-repeat;
+    background-image: url('../images/location2.jpg');
+    background-size: cover;
+    position: relative;
+    background-position: 50% 50% !important;
+    
+
+} 
+.bg_immg3::before{
+    background-color: rgba(29, 30, 44, 1) !important;
+    opacity: 0.9 !important;
+    display: block !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    content: ' ' !important;
+    border-radius: inherit;
+}
+
+
+.holidays-content p{
+    font-size: 16px;
+    color: white;
+}
+
+
+@media(max-width:776px){
+    .u_1528695426 {
+
+        background-attachment: scroll;
+        background-size: cover;
+        float: none;
+        top: 0;
+        left: 0;
+        position: relative;
+        height: auto;
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+        text-align: center;
+       
+        background-position: 50% 50%;
+        background-image: url('../images/anna-dudkova-urs_y9NwFcc-unsplash-resized-640w.webp') ;
+        background-color: #4d4d4d !important;
+        background-repeat: no-repeat !important;
+        height: 240px;
+        margin-top: 60px;
+    
+    }
+}
